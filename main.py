@@ -2,7 +2,9 @@ import speech_recognition as sr
 import webbrowser
 
 r = sr.Recognizer();
-r.adjust_for_ambient_noise(source, duration=5)
+
+with sr.Microphone() as source:
+    r.adjust_for_ambient_noise(source, duration=5)
 
 def listening():
     with sr.Microphone() as source:
