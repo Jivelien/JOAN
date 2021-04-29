@@ -1,2 +1,2 @@
 # JOAN
-Joan Operate Any Needs
+Joan Operates Any Needs
